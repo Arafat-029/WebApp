@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medo Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="section hero">
+    <div class="container">
+      <h2 class="h1 hero-title">
+        Welcome to <strong>Our <span class="red">Sneaker</span>  Paradise</strong>
+      </h2>
+      <p class="hero-text">
+        Explore our latest collection of stylish and comfortable sneakers. Perfect for every occasion, our top-quality designs bring you the best in global trends.
+      </p>
+      <button class="bt btn-primary d-flex align-items-center">
+        <span class=" me-2">Shop Now</span>
+        <i class="bi bi-arrow-right"></i>
+      </button>
+      
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section  class="section collection py-5">
+    <div id ="collection" class="container">
+      <div class="text-center mb-4">
+        <h2 class="h2"><span class="red">Our</span> Collections</h2>
+      </div>
+
+      <div id="collectionCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="collection-card text-center" style="background-image: url('/assets/images/collection-1.jpg');">
+              <h3 class="h4 text-white mt-3">Men Collections</h3>
+              <a href="#" class="btn btn-outline-dark mt-auto mb-3">Explore All →</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="collection-card text-center" style="background-image: url('/assets/images/collection-2.jpg');">
+              <h3 class="h4 text-white mt-3">Women Collections</h3>
+              <a href="#" class="btn btn-outline-dark mt-auto mb-3">Explore All →</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="collection-card text-center" style="background-image: url('/assets/images/collection-3.jpg');">
+              <h3 class="h4 text-white mt-3">Sports Collections</h3>
+              <a href="#" class="btn btn-outline-dark mt-auto mb-3">Explore All →</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#collectionCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#collectionCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="row g-4 justify-content-center d-none d-md-flex">
+
+        <div class="col-md-4">
+          <div class="collection-card text-center" style="background-image: url('/assets/images/collection-1.jpg');">
+            <h3 class="h4 text-white mt-3">Men Collections</h3>
+            <a href="#" class="btn btn-outline-dark mt-auto mb-3">Explore All →</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="collection-card text-center" style="background-image: url('/assets/images/collection-2.jpg');">
+            <h3 class="h4 text-white mt-3">Women Collections</h3>
+            <a href="#" class="btn btn-outline-dark mt-auto mb-3">Explore All →</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="collection-card text-center" style="background-image: url('/assets/images/collection-3.jpg');">
+            <h3 class="h4 text-white mt-3">Kids Collections</h3>
+            <a href="#" class="btn btn-outline-dark mt-auto mb-3">Explore All →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Bestseller Section-->
+  <section class="container py-5">
+    <h2 class="text-center mb-4"><span class="red">Bestsellers</span> Products</h2>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-1.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name" data-category="Men / Sports" data-price="$100.00" data-description="A comfortable sneaker for all sports." data-image="/assets/images/product-1.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Men / Sports</div>
+            <h5 class="product-title">Sneaker Name</h5>
+            <div class="price mb-3">$100.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-2.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name 2" data-category="Women / Casual" data-price="$120.00" data-description="Stylish sneaker for everyday wear." data-image="/assets/images/product-2.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Women / Casual</div>
+            <h5 class="product-title">Sneaker Name 2</h5>
+            <div class="price mb-3">$120.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-3.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name 3" data-category="Men / Running" data-price="$110.00" data-description="Perfect for running and sports activities." data-image="/assets/images/product-3.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Men / Running</div>
+            <h5 class="product-title">Sneaker Name 3</h5>
+            <div class="price mb-3">$110.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-4.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name 4" data-category="Women / Sports" data-price="$130.00" data-description="Great for sports and outdoor activities." data-image="/assets/images/product-4.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Women / Sports</div>
+            <h5 class="product-title">Sneaker Name 4</h5>
+            <div class="price mb-3">$130.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-5.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name 5" data-category="Men / Casual" data-price="$140.00" data-description="Casual sneaker for everyday comfort." data-image="/assets/images/product-5.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Men / Casual</div>
+            <h5 class="product-title">Sneaker Name 5</h5>
+            <div class="price mb-3">$140.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-6.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name 6" data-category="Women / Running" data-price="$115.00" data-description="Ideal for running and workouts." data-image="/assets/images/product-6.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Women / Running</div>
+            <h5 class="product-title">Sneaker Name 6</h5>
+            <div class="price mb-3">$115.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-7.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name 7" data-category="Men / Sports" data-price="$125.00" data-description="Great for all types of sports." data-image="/assets/images/product-7.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Men / Sports</div>
+            <h5 class="product-title">Sneaker Name 7</h5>
+            <div class="price mb-3">$125.00</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/assets/images/product-8.jpg" alt="Sneaker" class="img-fluid">
+            <div class="product-icons">
+              <button class="btn btn-light rounded-circle"><i class="bi bi-cart"></i></button>
+              <button class="btn btn-light rounded-circle toggle-heart"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-light rounded-circle btn-view" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Sneaker Name 8" data-category="Women / Casual" data-price="$150.00" data-description="Comfortable for everyday use." data-image="/assets/images/product-8.jpg">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details text-center p-3">
+            <div class="category">Women / Casual</div>
+            <h5 class="product-title">Sneaker Name 8</h5>
+            <div class="price mb-3">$150.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Modal Structure (Unique) -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Sneaker Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="modalImage" src="" alt="Sneaker" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h4 id="modalTitle">Sneaker Name</h4>
+            <p id="modalCategory">Category: Men / Sports</p>
+            <p id="modalPrice">Price: $100.00</p>
+            <p id="modalDescription">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="size-selection my-3">
+              <p><strong>Select Size:</strong></p>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-secondary rounded-circle size-option" data-size="38">38</button>
+                <button class="btn btn-outline-secondary rounded-circle size-option" data-size="39">39</button>
+                <button class="btn btn-outline-secondary rounded-circle size-option" data-size="40">40</button>
+                <button class="btn btn-outline-secondary rounded-circle size-option" data-size="41">41</button>
+                <button class="btn btn-outline-secondary rounded-circle size-option" data-size="42">42</button>
+                <button class="btn btn-outline-secondary rounded-circle size-option" data-size="43">43</button>
+              </div>
+            </div>
+
+            <button class="btn btn-primary w-100 mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <!--Footer-->
+  <div id="footer"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/navbar.js" defer></script>
+  <script src="/js/footer.js" defer></script>
+  <script src="/js/home.js"defer></script>
+</body>
+
+</html>
